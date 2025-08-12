@@ -105,10 +105,6 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 alias ls='ls -1Gh'
 alias ll='ls -alGh'
 
-alias startfp="cd ~/FulcrumProduct/FulcrumProduct; dotnet watch"
-alias startfc="cd ~/FulcrumProduct/Client; npm start"
-alias startjt="cd ~/FulcrumProduct/Client; npm run jt"
-
 # Force grep to always use the color option and show line numbers
 export GREP_OPTIONS='--color=auto'
 
@@ -121,14 +117,5 @@ alias reload="source ~/.zshrc"
 
 alias tmux="TERM=screen-256color-bce tmux"
 
-alias working="cd ~/FulcrumProduct"
-alias startm="ulimit -S -n 64000 && mongod --replSet rs0 --config /usr/local/etc/mongod.conf &"
-
-# bun completions
-[ -s "/Users/hansen/.bun/_bun" ] && source "/Users/hansen/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
